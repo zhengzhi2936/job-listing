@@ -9,13 +9,14 @@ class JobsController < ApplicationController
               Job.where(is_hidden: false).order('wage_upper_bound DESC')
             else
               Job.where(:is_hidden => false).order("created_at DESC")
-            end 
+            end
   end
   def new
     @job = Job.new
   end
   def show
     @job = Job.find(params[:id])
+    @resumes = @job.resumes 
     if @job.is_hidden
   flash[:warning] = "This Job already archieved"
   redirect_to root_path
