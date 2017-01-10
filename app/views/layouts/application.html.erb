@@ -12,6 +12,17 @@
     <div class="container-fluid">
     <%= render "common/navbar" %>
     <%= render "common/flashes"%>
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenuDivider">
+  <li>
+    <a href="/jobs?order=by_lower_bound">按照薪资下限排序</a>
+  </li>
+  <li>
+    <a href="/jobs?order=by_upper_bound">按照薪资上限排序</a>
+  </li>
+  <li>
+    <a href="/jobs">按照发表时间排序</a>
+  </li>
+</ul>
     <%= yield %>
   </div>
   <%= render "common/footer" %>
