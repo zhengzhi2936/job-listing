@@ -1,17 +1,25 @@
-<h1> <%= @job.title %>
+<h1> <a href="#" class="btn btn-info"><span class="glyphicon glyphicon-tags"></span> 职位空缺</a>
+  <%= @job.title %>
  <%= link_to("发送简历", new_job_resume_path(@job), class: "btn btn-default pull-right")%>
 </h1>
 <p>
+  <a href="#" class="btn btn-info"><span class="glyphicon glyphicon-arrow-down"></span> 工作描述</a>
+<br>
   <%= simple_format(@job.description)%>
 </p>
 
 <p>
-  <%= @job.wage_lower_bound%>
+  <a href="#" class="btn btn-info"><span class="glyphicon glyphicon-arrow-down"></span> 薪资下限</a>
+  <br><%= @job.wage_lower_bound%>
 </p>
 <p>
+<a href="#" class="btn btn-info"><span class="glyphicon glyphicon-arrow-down"></span> 薪资上限</a>
+<br>
 <%= @job.wage_upper_bound%>
 </p>
 <p>
+<a href="#" class="btn btn-info"><span class="glyphicon glyphicon-arrow-down"></span> 联系方式</a>
+<br>
   <%= simple_format(@job.contact_email)%>
 </p>
 <table class="table table-bordered table-striped">
@@ -19,7 +27,7 @@
     <tr>
       <th>Name</th>
       <th>Download Link</th>
-      
+
     </tr>
   </thead>
   <tbody>
