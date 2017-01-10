@@ -10,6 +10,7 @@ class Admin::JobsController < ApplicationController
   end
   def show
     @job = Job.find(params[:id])
+    @resumes = @job.resumes 
   end
   def edit
     @job = Job.find(params[:id])

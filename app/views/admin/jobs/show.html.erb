@@ -13,3 +13,21 @@
 <p>
   <%= simple_format(@job.contact_email)%>
 </p>
+<table class="table table-bordered table-striped">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Download Link</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    <% @resumes.each do |resume| %>
+      <tr>
+        <td><%= resume.name %></td>
+        <td><%= link_to "Download Resume", resume.attachment_url %></td>
+
+      </tr>
+    <% end %>
+  </tbody>
+</table>
