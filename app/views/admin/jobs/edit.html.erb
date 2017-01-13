@@ -1,12 +1,13 @@
-<h1> Edit a job </h1>
+<h1> 修改任务 </h1>
 
-<%= simple_form_for [:admin, @job] do |f| %>
+<%= simple_form_for [:admin,@job] do |f| %>
 
-<%= f.input :title %>
-<%= f.input :description %>
-<%= f.input :wage_lower_bound, :label => "薪资下限"%>
-<%= f.input :wage_upper_bound, :label => "薪资上限"%>
+<%= f.input :title, :label => "任务名称"%>
+<%= f.input :description, :label => "任务描述" %>
+<%= f.input :wage_lower_bound, :label => "佣金下限"%>
+<%= f.input :wage_upper_bound, :label => "佣金上限"%>
 <%= f.input :contact_email, :label => "联系方式"%>
+<%= f.input :user_class, :label => "任务等级"%>
 <%= f.input :is_hidden, :label => "隐藏"%>
-  <%= f.submit "Submit" %>
+  <%= f.submit "发送" %>
   <% end %>
