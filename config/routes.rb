@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+    get 'huangjin' => 'welcome#huangjin'
+    get 'baiyin' => 'welcome#baiyin'
+    get 'heitie' => 'welcome#heitie'
   devise_for :users
   resources :jobs do
     resources :resumes
