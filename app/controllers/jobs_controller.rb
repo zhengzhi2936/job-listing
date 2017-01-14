@@ -8,6 +8,9 @@ class JobsController < ApplicationController
   end
   def show
     @job = Job.find(params[:id])
+    if @job.is_hidden
+      redirect_to root_path, alert: "You have no permission!"
+    end
   end
   def edit
     @job = Job.find(params[:id])
