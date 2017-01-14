@@ -3,7 +3,7 @@ class Admin::JobsController < ApplicationController
   before_action :require_is_admin
   layout "admin"
   def index
-    @jobs = Job.all.paginate(:page => params[:page], :per_page => 8)
+    @jobs = Job.all
   end
   def new
     @job = Job.new

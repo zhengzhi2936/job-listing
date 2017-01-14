@@ -2,7 +2,7 @@
   <%= link_to("发布任务", new_admin_job_path, :class => "btn btn-danger" ) %>
 </div>
 
-<table class="table table-boldered table-striped custab" >
+<table class="table table-boldered custab" >
   <thead>
     <tr>
       <td><i class="fa fa-bomb" aria-hidden="true"></i> 任务名称</a></td>
@@ -40,6 +40,3 @@
   <% end %>
 </tbody>
 </table>
-<div class="text-center">
-  <%= will_paginate @jobs %>
-</div>

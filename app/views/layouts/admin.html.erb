@@ -8,14 +8,15 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body class='hehe'>
+  <body class='main-container'>
     <div class="container-fluid">
     <%= render "common/navbar"%>
     <%= render "common/flashes"%>
     <div class="row">
       <div class="col-md-2">
-        <ul class="nav nav-pills nav-stacked" style="max-width: 300px; padding-top:20px;">
+        <ul class="nav nav-pills nav-stacked" style="max-width: 200px; padding-top:20px;">
      <li class="btn btn-danger"><%= link_to("任务页", jobs_path ) %> </li>
+      <li class="btn btn-danger"><%= link_to("首页", root_path ) %> </li>
 
   </ul>
     </div>

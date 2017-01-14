@@ -1,0 +1,35 @@
+header {
+  text-align: center;
+
+  color: #622a1d;
+}
+a {
+  color: white;
+}
+h1 {
+  font-size: 70px;
+}
+h2 {
+  text-align: center;
+
+}
+
+article {
+  max-width: 100%;
+  padding: 0px;
+  margin: 0 0;
+  color: #ff7500;
+  text-align: center;
+
+  }
+  @media (max-width: 500px) {
+    h1 {
+      font-size: 36px;
+      }
+      li {
+        display: block;
+        padding: 5px;
+        }
+
+      }
+    .link { color: #FF0000; }
