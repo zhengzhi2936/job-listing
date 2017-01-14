@@ -3,4 +3,5 @@ class Resume < ApplicationRecord
   belongs_to :user
   belongs_to :job
   validates :content, presence: true
+  validates :attachment, presence: true
 end

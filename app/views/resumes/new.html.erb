@@ -1,9 +1,9 @@
-<h3> 投交履历到 <%= @job.title %> </h3>
+<h3> 申请任务到 <%= @job.title %> </h3>
 
 <hr>
 
 <%= simple_form_for [@job, @resume] do |f| %>
-  <%= f.input :content%>
-  <%= f.input :attachment %>
-  <%= f.submit "送出"%>
+  <%= f.input :content, :label => "曾做任务描述"%>
+  <%= f.input :attachment, :label => "细节详述" %>
+  <%= f.submit "送出", :class => "btn btn-xs btn-danger"%>
 <% end %>

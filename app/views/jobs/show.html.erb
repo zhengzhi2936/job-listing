@@ -1,8 +1,31 @@
-<h1> <%= @job.title %> </h1>
+<h1> 任务名称：<%= @job.title %> </h1>
 
 <p>
-  <%= simple_format(@job.description)%>
+  任务描述：<%= simple_format(@job.description)%>
 </p>
 <div class="text-center">
-  <%= link_to("投交履历", new_job_resume_path(@job), :style => "font-size: 30px; text-dexoration:underline;")%>
+  <%= link_to("领取任务", new_job_resume_path(@job), :style => "font-size: 30px; color: #896c39; text-dexoration:underline;")%>
+</div>
+<table class="table table-bordered ">
+  <thead>
+   <tr>
+       <th class="hehe">已申请者送出的内容</th>
+    </tr>
+  </thead>
+  <tbody>
+  <% @resumes.each do |resume| %>
+  <tr>
+   <td class="heihei"><%= resume.content %></td>
+  </tr>
+  <% end %>
+  </tbody>
+</table>
+<div>
+
+
+</div>
+<br><br><br><br><br><br><br>
+<div>
+  <%= link_to("任务页", jobs_path, :class => "btn btn-xs btn-danger") %>
+  <%= link_to("酒馆首页", root_path, :class => "btn btn-xs btn-danger") %>
 </div>
