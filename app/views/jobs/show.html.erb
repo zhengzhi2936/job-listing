@@ -1,21 +1,27 @@
-<h1> 任务名称：<%= @job.title %> </h1>
+<h1>任务名称：<%= @job.title %> </h1>
 
 <p>
   任务描述：<%= simple_format(@job.description)%>
 </p>
+
+
+
+<br><br><br><br><br>
 <div class="text-center">
   <%= link_to("领取任务", new_job_resume_path(@job), :style => "font-size: 30px; color: #896c39; text-dexoration:underline;")%>
 </div>
+
+<br><br><br>
 <table class="table table-bordered ">
   <thead>
    <tr>
-       <th class="hehe">已申请者送出的内容</th>
+       <th class="heihei">已申请者送出的内容</th>
     </tr>
   </thead>
   <tbody>
   <% @resumes.each do |resume| %>
   <tr>
-   <td class="heihei"><%= resume.content %></td>
+   <td class="hehe"><%= resume.content %></td>
   </tr>
   <% end %>
   </tbody>
@@ -27,9 +33,8 @@
   <embed src="http://music.163.com/style/swf/widget.swf?sid=32526653&amp;type=2&amp;auto=1&amp;width=320&amp;height=66" width="0" height="0" &#160;="" allownetworking="all">
 <br><br><br><br><br><br><br>
 <div>
-  <%= link_to("任务页", jobs_path, :class => "btn btn-xs btn-danger") %>
-  <br><br>
-  <%= link_to("酒馆首页", root_path, :class => "btn btn-xs btn-danger") %>
+  <%= link_to("任务页", jobs_path, :class => "btn btn-xs btn-default") %>
+
 </div>
 
 <br><br><br><br><br><br><br>
