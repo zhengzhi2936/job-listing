@@ -23,6 +23,7 @@
       <td><span class="glyphicon glyphicon-arrow-up"></span> 佣金上限（两白银）</td>
       <td><i class="fa fa-star" aria-hidden="true"></i>任务等级</td>
       <td><span class="glyphicon glyphicon-time"></span> 发布时间</td>
+      <td> </td>
     </tr>
   </thead>
   <tbody>
@@ -42,6 +43,9 @@
     </td>
     <td>
       <%= job.created_at %>
+    </td>
+    <td>
+        <%= link_to("领取任务", new_job_resume_path(job), :class => "btn btn-xs btn-danger") %>
     </td>
   </tr>
   <% end %>
