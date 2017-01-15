@@ -1,11 +1,13 @@
-
+<div class="show">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/qAIrj_Vqdfc" frameborder="0" allowfullscreen></iframe>
+</div>
 <h1 class="show">任务名称：<%= @job.title %> </h1>
 
 <p class="show">
   任务描述：<%= @job.description%>
 </p>
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br>
 <div class="text-center">
   <%= link_to("领取任务", new_job_resume_path(@job), :style => "font-size: 30px; color: #896c39; text-dexoration:underline;")%>
 </div>
