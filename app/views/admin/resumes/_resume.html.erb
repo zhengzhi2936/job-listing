@@ -16,7 +16,7 @@
 
     <% if resume.attachment.present? %>
     <i class="fa fa-paperclip"> </i>
-    <%= link_to("Download Resume", resume.attachment_url) %>
+    <%= link_to("Download Resume", resume.attachment_url, :class => "btn btn-xs btn-danger") %>
     <% else %>
     No Attachment
     <% end %>
