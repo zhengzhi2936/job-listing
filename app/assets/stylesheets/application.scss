@@ -23,6 +23,12 @@
    color: #9E9E9E;
    text-align: center;
  }
+ .renwu{
+   display: inline-block;	//图片和链接文字显示在同一行
+   margin-right: 10px; //图片和链接文字拉开一点距离
+   width: 22px; //定制图片宽度
+   height: 22px; //定制图片高度
+ }
  .container {
    color: #455A64;
    background: transparent;
