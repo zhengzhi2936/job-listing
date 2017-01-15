@@ -21,7 +21,7 @@
   <tbody>
   <% @resumes.each do |resume| %>
   <tr>
-   <td class="hehe"><%= resume.content %></td>
+   <td class="hehe"><%= simple_format(resume.content) %></td>
   </tr>
   <% end %>
   </tbody>
