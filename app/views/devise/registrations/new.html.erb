@@ -15,6 +15,7 @@
          <input name="user[password]" type="password" placeholder="Choose a password" required="required" class="input pass"/>
          <input name="user[password2]" type="password" placeholder="Confirm password" required="required" class="input pass"/>
          <input type="submit" value="注册" class="inputButton"/>
+          <%= f.input :is_admin, label: "招聘单位" %>
   </div>
 
 <% end %>

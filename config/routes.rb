@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
   resources :cities
-  devise_for :users
+    devise_for :user, controllers: {
+    passwords: 'users/passwords',
+    registrations: 'users/registrations',
+    sessions: 'users/sessions'
+  }
   resources :jobs do
     resources :resumes
   end
