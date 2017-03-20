@@ -37,27 +37,31 @@ Image credits: unsplash.com
 /*          Hero Headers        */
 /********************************/
 .hero {
-    position: absolute;
+    position: relative;
     top: 50%;
     left: 50%;
     z-index: 3;
-    color: #dcef09;
     text-align: center;
     text-transform: uppercase;
-    text-shadow: 1px 1px 0 rgba(0,0,0,.75);
+    text-shadow: 1px 1px 0 rgba(0,0,0,.5);
       -webkit-transform: translate3d(-50%,-50%,0);
          -moz-transform: translate3d(-50%,-50%,0);
           -ms-transform: translate3d(-50%,-50%,0);
            -o-transform: translate3d(-50%,-50%,0);
               transform: translate3d(-50%,-50%,0);
-}
-.hero h1 {
+    h3{
+      color: #FFFFFF;
+      z-index: 99;
+    }
+
+    h1 {
     font-size: 6em;
     font-weight: bold;
     margin: 0;
     padding: 0;
+    color: #FFFFFF;
 }
-
+}
 .fade-carousel .carousel-inner .item .hero {
     opacity: 0;
     -webkit-transition: 2s all ease-in-out .1s;
